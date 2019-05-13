@@ -8,5 +8,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jscodeshift": "^0.6.4",
+    "jscodeshift-ava-tester": "^1.1.1"
+  },
+  "devDependencies": {
+    "ava": "^1.4.1"
+  }
 }
