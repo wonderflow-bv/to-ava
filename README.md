@@ -14,3 +14,12 @@ Check `fixtures/` folder to see which type of tests are supported.
 
 `npm t`
 
+### TODO
+
+- [ ] add support for more jest assertion (now only toEqual)
+
+### Resources
+
+- [Ava to Jest transformers](https://github.com/skovhus/jest-codemods/blob/master/src/transformers/ava.js)
+- [AST Explorer](https://astexplorer.net/)
+
