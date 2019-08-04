@@ -10,7 +10,7 @@ Check `fixtures/` folder to see which type of tests are supported.
 
 `jscodeshift -t lib/mege-describes-into-its.js ./fixtures/simple-test-1-input.js -d -p`
 
-### Test
+## Test
 
 `npm t`
 
