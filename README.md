@@ -8,7 +8,12 @@ Check `fixtures/` folder to see which type of tests are supported.
 
 ### Run codemod on a test file
 
-`jscodeshift -t lib/mege-describes-into-its.js ./fixtures/simple-test-1-input.js -d -p`
+```bash
+npm i -g jscodeshift
+
+jscodeshift -t lib/mege-describes-into-its.js ./fixtures/simple-test-1-input.js -d -p
+```
+
 
 ## Test
 
