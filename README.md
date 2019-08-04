@@ -26,7 +26,6 @@ jscodeshift -t lib/mege-describes-into-its.js ./fixtures/simple-test-1-input.js 
 `.not.toBeNull`
   - [ ] `.not.toContain`
   - [ ] `.not.toEqual`
-  - [ ] `.sort`
   - [ ] `.toBe`
   - [ ] `.toBeDefined`
   - [ ] `.toBeFalsy`
