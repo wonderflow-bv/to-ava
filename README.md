@@ -6,20 +6,20 @@ Check `fixtures/` folder to see which type of tests are supported.
 
 ## Usage
 
-### Run a single codemod
+### Run codemod on a test file
 
 `jscodeshift -t lib/mege-describes-into-its.js ./fixtures/simple-test-1-input.js -d -p`
 
-### Test conversion
+### Test
 
 `npm t`
 
-### TODO
+## TODO
 
 - [ ] add support for more jest assertion (now only toEqual)
 - [ ] add support for nested describes
 
-### Resources
+## Resources
 
 - [Ava to Jest transformers](https://github.com/skovhus/jest-codemods/blob/master/src/transformers/ava.js)
 - [AST Explorer](https://astexplorer.net/)
