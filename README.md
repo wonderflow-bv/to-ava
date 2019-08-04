@@ -22,8 +22,8 @@ jscodeshift -t lib/mege-describes-into-its.js ./fixtures/simple-test-1-input.js 
 ## TODO
 
 - [ ] add support for more jest assertion (now only `toEqual` is supported). An initial list follows:
-`.not.toBeDefined`
-`.not.toBeNull`
+  - [ ] `.not.toBeDefined`
+  - [ ] `.not.toBeNull`
   - [ ] `.not.toContain`
   - [ ] `.not.toEqual`
   - [ ] `.toBe`
