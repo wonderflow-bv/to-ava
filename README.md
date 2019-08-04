@@ -17,6 +17,7 @@ Check `fixtures/` folder to see which type of tests are supported.
 ### TODO
 
 - [ ] add support for more jest assertion (now only toEqual)
+- [ ] add support for nested describes
 
 ### Resources
 
