@@ -5,7 +5,10 @@ describe('test 1', () => {
     const res = 2 + 3
 
     expect(res).toMatchSnapshot()
+
     expect(res).toBeDefined()
     expect(res).toBeUndefined()
+
+    expect(res).toBeInstanceOf(Object)
   })
 })
