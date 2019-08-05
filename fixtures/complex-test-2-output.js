@@ -7,4 +7,10 @@ test('test 1 > should work find', (t) => {
   t.falsy(res)
 
   t.true(res instanceof Object)
+
+  t.true(res > 0)
+  t.true(res >= 0)
+
+  t.true(res < 0)
+  t.true(res <= 0)
 })

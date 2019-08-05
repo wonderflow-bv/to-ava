@@ -10,5 +10,11 @@ describe('test 1', () => {
     expect(res).toBeUndefined()
 
     expect(res).toBeInstanceOf(Object)
+
+    expect(res).toBeGreaterThan(0)
+    expect(res).toBeGreaterThanOrEqual(0)
+
+    expect(res).toBeLessThan(0)
+    expect(res).toBeLessThanOrEqual(0)
   })
 })
