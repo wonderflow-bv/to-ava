@@ -28,8 +28,8 @@ jscodeshift -t lib/mege-describes-into-its.js ./fixtures/simple-test-1-input.js 
   - [X] `.toBeFalsy`
   - [X] `.toBeTruthy`
   - [X] `.toMatchSnapshot`
-  - [ ] `.toBeDefined`
-  - [ ] `.toBeUndefined`
+  - [X] `.toBeDefined`
+  - [X] `.toBeUndefined`
   - [ ] `.toBeGreaterThan`
   - [ ] `.toBeGreaterThanOrEqual`
   - [ ] `.toBeInstanceOf`
