@@ -15,4 +15,6 @@ test('test 1 > should work find', (t) => {
   t.true(res <= 0)
 
   t.deepEqual(res.length, 2)
+
+  t.true(typeof res['length'] !== 'undefined')
 })

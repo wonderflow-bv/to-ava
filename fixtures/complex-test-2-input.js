@@ -18,5 +18,7 @@ describe('test 1', () => {
     expect(res).toBeLessThanOrEqual(0)
 
     expect(res).toHaveLength(2)
+
+    expect(res).toHaveProperty('length')
   })
 })
