@@ -30,9 +30,9 @@ jscodeshift -t lib/mege-describes-into-its.js ./fixtures/simple-test-1-input.js 
   - [X] `.toMatchSnapshot`
   - [X] `.toBeDefined`
   - [X] `.toBeUndefined`
+  - [X] `.toBeInstanceOf`
   - [ ] `.toBeGreaterThan`
   - [ ] `.toBeGreaterThanOrEqual`
-  - [ ] `.toBeInstanceOf`
   - [ ] `.toBeLessThanOrEqual`
   - [ ] `.toContain`
   - [ ] `.toContainEqual`
