@@ -31,9 +31,10 @@ jscodeshift -t lib/mege-describes-into-its.js ./fixtures/simple-test-1-input.js 
   - [X] `.toBeDefined`
   - [X] `.toBeUndefined`
   - [X] `.toBeInstanceOf`
-  - [ ] `.toBeGreaterThan`
-  - [ ] `.toBeGreaterThanOrEqual`
-  - [ ] `.toBeLessThanOrEqual`
+  - [X] `.toBeGreaterThan`
+  - [X] `.toBeGreaterThanOrEqual`
+  - [X] `.toBeLessThan`
+  - [X] `.toBeLessThanOrEqual`
   - [ ] `.toContain`
   - [ ] `.toContainEqual`
   - [ ] `.toEqual`
