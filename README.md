@@ -27,7 +27,7 @@ jscodeshift -t lib/mege-describes-into-its.js ./fixtures/simple-test-1-input.js 
   - [X] `.toBeNull`
   - [X] `.toBeFalsy`
   - [X] `.toBeTruthy`
-  - [ ] `.toMatchSnapshot`
+  - [X] `.toMatchSnapshot`
   - [ ] `.toBeDefined`
   - [ ] `.toBeUndefined`
   - [ ] `.toBeGreaterThan`
