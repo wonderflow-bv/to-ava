@@ -8,4 +8,4 @@ test('test 1 > should work find', (t) => {
 
   t.falsy(res)
   t.truthy(res)
-})
+});
