@@ -1,4 +1,4 @@
-# codemod-from-jest-to-ava
+# to-ava
 
 Codemod to convert tests written in jest to ava.
 
