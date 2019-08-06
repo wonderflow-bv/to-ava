@@ -22,5 +22,6 @@ describe('test 1', () => {
     expect(res).toHaveProperty('length')
 
     expect(res).toContain('0')
+    expect(res).toContainEqual('0')
   })
 })

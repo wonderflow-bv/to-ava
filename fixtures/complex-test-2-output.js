@@ -19,4 +19,5 @@ test('test 1 > should work find', (t) => {
   t.true(typeof res['length'] !== 'undefined')
 
   // TODO: expect(res).toContain('0');
+  // TODO: expect(res).toContainEqual('0');
 })
