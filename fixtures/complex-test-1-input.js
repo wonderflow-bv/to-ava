@@ -1,11 +1,15 @@
-test('test 1 > should work find', (t) => {
-  const res = 2 + 3
-  t.deepEqual(res, 5)
+/* eslint-env jest */
 
-  t.deepEqual(res, 5)
+describe('test 1', () => {
+  it('should work find', () => {
+    const res = 2 + 3
+    expect(res).toEqual(5)
 
-  t.deepEqual(res, null)
+    expect(res).toBe(5)
 
-  t.falsy(res)
-  t.truthy(res)
+    expect(res).toBeNull()
+
+    expect(res).toBeFalsy()
+    expect(res).toBeTruthy()
+  })
 })
