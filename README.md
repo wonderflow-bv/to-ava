@@ -2,22 +2,30 @@
 
 Codemod to convert tests written in jest to ava.
 
-Check `fixtures/` folder to see which type of tests are supported.
+Check `fixtures/` folder to see some example.
 
 ## Usage
 
-### Run codemod on a test file
+### Install
 
-```bash
-npm i -g jscodeshift
+`npm i -g to-ava`
 
-jscodeshift -t lib/mege-describes-into-its.js ./fixtures/simple-test-1-input.js -d -p
-```
+### Run it on a Javascript file
 
+`to-ava ./jest.test.js`
 
-## Test
+### Run it on a Typescript file
 
-`npm t`
+`to-ava -p=ts ./jest.test.ts`
+
+### Run it on a folder
+
+`to-ava -p=ts ./tests`
+
+### Notes
+
+It excludes files that are not test files. A file is supposed to contain tests if its name includes either `test.` either `spec.`
+
 
 ## Supported Assertions
 
@@ -52,6 +60,10 @@ expect(res).toContain('0')
 
 // TODO: expect(res).toContain('0');
 ```
+
+## Test
+
+`npm t`
 
 
 
