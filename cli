@@ -1,14 +1,27 @@
 #!/usr/bin/env node
 var argv = require('yargs')
   // .usage('Usage: $0 <command> [options]')
-  // .command('count', 'Count the lines in a file')
-  .example('$0 -p ./file.spec.js', 'transform jest tests in file.spec.js into ava tests')
-  .option('path', {
-    type: 'array',
-    desc: 'Path to files or directory',
-    alias: 'p'
+  .command('$0 <path...>', 'Count the lines in a file', (yargs) => {
+    yargs
+      .positional('path', {
+        type: 'array',
+        describe: 'File or directory to transform'
+      })
+    return yargs
   })
-  .demandOption(['p'])
+  // .example('$0 -p ./file.spec.js', 'transform jest tests in file.spec.js into ava tests')
+  .option('verbose', {
+    // type: 'array',
+    desc: 'Verbose mode',
+    alias: 'v'
+  })
+  .option('parser', {
+    // type: 'array',
+    desc: '--parser=babel|babylon|flow|ts|tsx  the parser to use for parsing the source files (default: babel)',
+    alias: 'p'
+    // default: 'babel'
+  })
+  // .demandOption(['p'])
   .help('h')
   .alias('h', 'help')
   // .epilog('copyright 2019')
