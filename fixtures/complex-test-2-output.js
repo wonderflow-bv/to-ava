@@ -17,4 +17,6 @@ test('test 1 > should work find', (t) => {
   t.deepEqual(res.length, 2)
 
   t.true(typeof res['length'] !== 'undefined')
+
+  // TODO: expect(res).toContain('0');
 })
