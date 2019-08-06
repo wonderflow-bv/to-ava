@@ -19,26 +19,45 @@ jscodeshift -t lib/mege-describes-into-its.js ./fixtures/simple-test-1-input.js 
 
 `npm t`
 
+## Supported Assertions
+
+- [X] `.toEqual`
+- [X] `.toBe`
+- [X] `.toBeNull`
+- [X] `.toBeFalsy`
+- [X] `.toBeTruthy`
+- [X] `.toMatchSnapshot`
+- [X] `.toBeDefined`
+- [X] `.toBeUndefined`
+- [X] `.toBeInstanceOf`
+- [X] `.toBeGreaterThan`
+- [X] `.toBeGreaterThanOrEqual`
+- [X] `.toBeLessThan`
+- [X] `.toBeLessThanOrEqual`
+- [X] `.toHaveLength`
+- [X] `.toHaveProperty`
+
+## Assertions not supported
+
+All the other assertions are not supported. Including all the assertions used in combination with `.not` - for example `.not.toBeDefined()`
+
+Those assertions will be still transformed, however not into an ava assertion, but as a comment with the "TODO: " symbol. Thanks for the "TODO: " symbol, it will be possible to find all the assertions not transformed, and fix them manually.
+
+For example
+
+```js
+expect(res).toContain('0')
+
+// will be transformed into
+
+// TODO: expect(res).toContain('0');
+```
+
+
+
 ## TODO
 
 - [ ] add support for more jest assertion. The list follows:
-  - [X] `.toEqual`
-  - [X] `.toBe`
-  - [X] `.toBeNull`
-  - [X] `.toBeFalsy`
-  - [X] `.toBeTruthy`
-  - [X] `.toMatchSnapshot`
-  - [X] `.toBeDefined`
-  - [X] `.toBeUndefined`
-  - [X] `.toBeInstanceOf`
-  - [X] `.toBeGreaterThan`
-  - [X] `.toBeGreaterThanOrEqual`
-  - [X] `.toBeLessThan`
-  - [X] `.toBeLessThanOrEqual`
-  - [X] `.toHaveLength`
-  - [X] `.toHaveProperty`
-  - [ ] `.toContain`
-  - [ ] `.toContainEqual`
   - [ ] `.not.toBeDefined`
   - [ ] `.not.toBeNull`
   - [ ] `.not.toContain`
