@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+var argv = require('yargs')
+  // .usage('Usage: $0 <command> [options]')
+  // .command('count', 'Count the lines in a file')
+  .example('$0 -p ./file.spec.js', 'transform jest tests in file.spec.js into ava tests')
+  .option('path', {
+    type: 'array',
+    desc: 'Path to files or directory',
+    alias: 'p'
+  })
+  .demandOption(['p'])
+  .help('h')
+  .alias('h', 'help')
+  // .epilog('copyright 2019')
+  .argv
+
+require('./index')(argv)

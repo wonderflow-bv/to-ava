@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": "./cli",
   "scripts": {
     "test": "ava"
   },
@@ -10,8 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.4.2",
     "jscodeshift": "^0.6.4",
-    "jscodeshift-ava-tester": "^1.1.1"
+    "jscodeshift-ava-tester": "^1.1.1",
+    "yargs": "^13.3.0"
   },
   "devDependencies": {
     "ava": "^1.4.1"
