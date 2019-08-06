@@ -57,6 +57,7 @@ expect(res).toContain('0')
 
 ## TODO
 
+- [ ] refactor: split the transformer into multiple functions, with clear names
 - [ ] add support for more jest assertion. The list follows:
   - [ ] `.not.toBeDefined`
   - [ ] `.not.toBeNull`
