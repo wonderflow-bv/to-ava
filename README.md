@@ -69,7 +69,7 @@ expect(res).toContain('0')
 
 ## TODO
 
-- [ ] add support for beforeEach, beforeAll, afterEach, afterAll
+- [X] add support for beforeEach, beforeAll, afterEach, afterAll
 - [ ] refactor: split the transformer into multiple functions, with clear names
 - [ ] add support for more jest assertion. The list follows:
   - [ ] `.not.toBeDefined`
