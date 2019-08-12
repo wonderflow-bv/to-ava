@@ -1,3 +1,5 @@
+const { serial: test } = require('ava')
+
 const a = require('a');
 import * as b from './b'
 
