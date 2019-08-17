@@ -26,8 +26,9 @@ Check `fixtures/` folder to see some example.
 
 It excludes files that are not test files. A file is supposed to contain tests if its name includes either `test.` either `spec.`
 
+## Support
 
-## Supported Assertions
+### Supported Assertions
 
 - [X] `.toEqual`
 - [X] `.toBe`
@@ -45,7 +46,12 @@ It excludes files that are not test files. A file is supposed to contain tests i
 - [X] `.toHaveLength`
 - [X] `.toHaveProperty`
 
-## Assertions not supported
+### Other things supported
+
+- [X] `test.each()`
+- [X] trasnformation of test hooks (`before()`, `beforeEach()`, `after()`, `afterAll()`)
+
+### Assertions not supported
 
 All the other assertions are not supported. Including all the assertions used in combination with `.not` - for example `.not.toBeDefined()`
 
@@ -60,6 +66,10 @@ expect(res).toContain('0')
 
 // TODO: expect(res).toContain('0');
 ```
+
+### Other things not supported
+
+- nested `describe()` - require manual rewriting of jest tests in order to remove nested `describe()`
 
 ## Test
 
