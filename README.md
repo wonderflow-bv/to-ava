@@ -69,7 +69,7 @@ expect(res).toContain('0')
 
 ### Other things not supported
 
-- [ ]nested `describe()` - require manual rewriting of jest tests in order to remove nested `describe()`
+- [ ] nested `describe()` - require manual rewriting of jest tests in order to remove nested `describe()`
 - [ ] skipped tests `describe.skip()`, `it.skip()`
 
 ## Test
