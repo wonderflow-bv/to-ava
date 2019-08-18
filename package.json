@@ -28,7 +28,6 @@
     "email": "giovanni@wonderflow.co",
     "name": "bitliner"
   },
-  "man": "cli",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.2",
