@@ -1,14 +1,34 @@
 {
   "name": "to-ava",
   "version": "1.2.4",
-  "description": "",
+  "description": "Codemod to convert jest test suites to ava",
   "main": "index.js",
   "bin": "./cli",
   "scripts": {
     "test": "ava"
   },
-  "keywords": [],
-  "author": "bitliner",
+  "homepage": "https://github.com/wonderflow-bv/to-ava.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wonderflow-bv/to-ava.git"
+  },
+  "keywords": [
+    "codemod",
+    "jest",
+    "ava",
+    "test",
+    "refactoring",
+    "transformer"
+  ],
+  "bugs": {
+    "email": "giovanni@wonderflow.co",
+    "url": "https://github.com/wonderflow-bv/to-ava/issues"
+  },
+  "author": {
+    "email": "giovanni@wonderflow.co",
+    "name": "bitliner"
+  },
+  "man": "./cli",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.2",
